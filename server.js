@@ -15,6 +15,7 @@ const hbs = exphbs.create({ helpers }); // Create a handlebars instance with hel
 // Set the view engine to handlebars
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
+app.set('views', path.join(__dirname, 'views'));
 
 // Set up session configuration
 
